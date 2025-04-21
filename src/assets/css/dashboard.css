@@ -1,0 +1,104 @@
+.edit-btn {
+	outline: none;
+	color: white;
+	background-color: #6b21a8; /* bg-purple-700 */
+	font-weight: 500; /* font-medium */
+	border-radius: 0.5rem; /* rounded-lg */
+	font-size: 0.875rem; /* text-sm */
+	padding: 0.625rem 1.25rem; /* py-2.5 px-5 */
+	margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.delete-btn {
+	outline: none;
+	color: white;
+	background-color: #b91c1c;
+	font-weight: 500;
+	border-radius: 0.5rem;
+	font-size: 0.875rem;
+	padding: 0.625rem 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+/* Hover state */
+.edit-btn:hover {
+	background-color: #5b21b6; /* bg-purple-800 */
+}
+.delete-btn:hover {
+	background-color: #b91c1c; /* bg-purple-800 */
+}
+
+/* Focus state */
+.edit-btn:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #c4b5fd; /* focus:ring-4 focus:ring-purple-300 */
+}
+
+.delete-btn:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #fca5a5; /* focus:ring-4 focus:ring-purple-300 */
+}
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+	.edit-btn {
+		background-color: #9333ea; /* dark:bg-purple-600 */
+	}
+
+	.edit-btn:hover {
+		background-color: #7e22ce; /* dark:hover:bg-purple-700 */
+	}
+
+	.edit-btn:focus {
+		box-shadow: 0 0 0 4px #7e22ce; /* dark:focus:ring-purple-900 */
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.delete-btn {
+		background-color: #dc2626; /* dark:bg-purple-600 */
+	}
+
+	.delete-btn:hover {
+		background-color: #b91c1c; /* dark:hover:bg-purple-700 */
+	}
+
+	.delete-btn:focus {
+		box-shadow: 0 0 0 4px #7f1d1d; /* dark:focus:ring-purple-900 */
+	}
+}
+
+.add-button {
+	color: white;
+	background-color: #1d4ed8; /* bg-blue-700 */
+	font-weight: 500; /* font-medium */
+	border-radius: 0.5rem; /* rounded-lg */
+	font-size: 0.875rem; /* text-sm */
+	padding: 0.625rem 1.25rem; /* py-2.5 px-5 */
+	margin-inline-end: 0.5rem; /* me-2 */
+	margin-bottom: 0.5rem; /* mb-2 */
+	outline: none; /* focus:outline-none */
+}
+
+.add-button:hover {
+	background-color: #1e40af; /* hover:bg-blue-800 */
+}
+
+.add-button:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #93c5fd; /* focus:ring-4 focus:ring-blue-300 */
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+	.add-button {
+		background-color: #2563eb; /* dark:bg-blue-600 */
+	}
+
+	.add-button:hover {
+		background-color: #1e3a8a; /* dark:hover:bg-blue-700 */
+	}
+
+	.add-button:focus {
+		box-shadow: 0 0 0 4px #1e40af; /* dark:focus:ring-blue-800 */
+	}
+}
