@@ -3,10 +3,14 @@ import { UsersData } from "../../../constants/constants";
 
 const initialState = {
   usersList: UsersData,
-  search: "",
   currentPage: 1,
-  itemsPerPage: 5
+  itemsPerPage: 5,
+  isLoading: true,
+  search: "",
+  filterByName: "",
+  filterByEmail: "",
 }
+
 
 const dashboardSlice = createSlice({
   name: "dashboard",
@@ -23,16 +27,25 @@ const dashboardSlice = createSlice({
         user.id === action.payload.id ? action.payload : user
       );
     },
-    setSearchItem: (state, action) => {
-      state.search = action.payload
-    },
     setCurrentPage: (state, action) => {
       state.currentPage = action.payload
+    },
+    setLoading: (state, action) => {
+      state.isLoading = action.payload
+    },
+    setSearch: (state, action) => {
+      state.search = action.payload;
+    },
+    setFilterByName: (state, action) => {
+      state.filterByName = action.payload
+    },
+    setFilterByEmail: (state, action) => {
+      state.filterByEmail = action.payload
     },
   },
   extraReducers: (builder) => { }
 })
 
-export const { addUsers, deleteUsers, editUser, setSearchItem, setCurrentPage } = dashboardSlice.actions
+export const { addUsers, deleteUsers, editUser, setSearch, setCurrentPage, setLoading, setFilterByName, setFilterByEmail } = dashboardSlice.actions
 
 export default dashboardSlice.reducer;

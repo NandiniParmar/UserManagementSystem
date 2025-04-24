@@ -10,7 +10,7 @@ const RoutesPage = () => {
 
 
   return (
-    <div>
+    <div className='w-full'>
       <Routes>
         <Route path='/' element={<Login setIsAuth={setIsAuth} />} />
         <Route path="/dashboard" element={
